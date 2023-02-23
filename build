@@ -1,0 +1,7 @@
+#!/usr/bin/bash
+
+docker run --rm -it \
+    -u $(id -u):$(id -g) \
+    -v $PWD:/app \
+    -p 80:80 \
+    composer:2.5.4 "$@"
