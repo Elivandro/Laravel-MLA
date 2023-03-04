@@ -16,7 +16,10 @@
                         {{ __('Dashboard') }}
                     </x-nav-link>
                     <x-nav-link :href="route('signature.create')" :active="request()->routeIs('signature.create')">
-                        create
+                        Criar cliente
+                    </x-nav-link>
+                    <x-nav-link :href="route('plano.create')" :active="request()->routeIs('plano.create')">
+                        Criar plano
                     </x-nav-link>
                 </div>
             </div>
